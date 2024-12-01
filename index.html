@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Timed Cards Opening</title>
+  <link rel="stylesheet" href="./style.css">
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="arrow arrow-left" id="arrow-left">
+      <!-- Left Arrow SVG -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </svg>
+    </div>
+    <div class="arrow arrow-right" id="arrow-right">
+      <!-- Right Arrow SVG -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg><body>
+  <div class="indicator"></div>
+  <nav>
+    <div>
+      <div class="svg-container">
+        <!-- Logo SVG -->
+        <!-- (Include your logo SVG code here) -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <!-- Your logo path here -->
+        </svg>
+      </div>
+    </div>
+      <div class="active"></div>
+      <div class="svg-container">
+        <!-- Search Icon SVG -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <!-- Your search icon path here -->
+        </svg>
+      </div>
+      <div class="svg-container">
+        <!-- User Icon SVG -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <!-- Your user icon path here -->
+        </svg>
+      </div>
+    </div>
+  </nav>
+
+  <div id="demo"></div>
+
+  <div class="details" id="details-even">
+    <div class="place-box">
+      <div class="text">Texas - USA</div>
+    </div>
+    <div class="title-box-1"><div class="title-1">Far West</div></div>
+    <div class="title-box-2"><div class="title-2">Texas</div></div>
+    <div class="desc">
+      The Far West Texas Series is an ongoing collection of photographs captured in the Chihuahuan Desert area of Texas. West Texas is famous for its glorious sunsets. It's always worth a visit for that alone. But the magic of this remote area will keep you returning for years to come. Ashley's family roots are in West Texas so she's familiar with this magic and call of the desert. Consistent with her other series, she plays with multiple exposures and shoots with a variety of cameras. Often aerial trips are taken to get closer to mountain tops, enjoy different vantage points, and the dazzling landscape below. She also leans into heating certain films to create bold colors seen in Pink Marfa Ocotillo, Ruby, and Pink Marfa Agave.
+    </div>
+    <div class="cta">
+      <button class="bookmark">
+        <!-- Bookmark Icon SVG -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <!-- Your bookmark icon path here -->
+        </svg>
+      </button>
+      <button class="discover">Shop Collection</button>
+    </div>
+  </div>
+
+  <div class="details" id="details-odd">
+    <div class="place-box">
+      <div class="text">Switzerland Alps</div>
+    </div>
+    <div class="title-box-1"><div class="title-1">SAINT</div></div>
+    <div class="title-box-2"><div class="title-2">ANTONIEN</div></div>
+    <div class="desc">
+      Tucked away in the Switzerland Alps, Saint Antönien offers an idyllic retreat for those seeking tranquility and adventure alike. It's a hidden gem for backcountry skiing in winter and boasts lush trails for hiking and mountain biking during the warmer months.
+    </div>
+    <div class="cta">
+      <button class="bookmark">
+        <!-- Bookmark Icon SVG -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <!-- Your bookmark icon path here -->
+        </svg>
+      </button>
+      <button class="discover">Shop Collection</button>
+    </div>
+  </div>
+
+  <div class="pagination" id="pagination">
+    <div class="arrow arrow-left" id="arrow-left">
+      <!-- Left Arrow SVG -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </svg>
+    </div>
+    <div class="arrow arrow-right" id="arrow-right">
+      <!-- Right Arrow SVG -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </div>
+    <div class="progress-sub-container">
+      <div class="progress-sub-background">
+        <div class="progress-sub-foreground"></div>
+      </div>
+    </div>
+    <div class="slide-numbers" id="slide-numbers"></div>
+  </div>
+
+  <div class="cover"></div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
